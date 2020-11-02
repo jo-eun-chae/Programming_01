@@ -17,7 +17,7 @@ public class CalculatorFrame extends JFrame
         this.setSize(300, 300);
         
         //this.add(new NorthPanel());
-        //this.add(new CenterPanel());
+        this.add(new CenterPanel());
         //this.add(new SouthPanel());
         
         this.setVisible(true);
