@@ -1,33 +1,26 @@
+import javax.swing.*;
 
 /**
- * Write a description of class CalculatorFrame here.
+ * 과제#1 : 프레임 만들기
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (2019315011 조은채)
+ * @version (2020.11.02)
  */
-public class CalculatorFrame
+public class CalculatorFrame extends JFrame
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
      * Constructor for objects of class CalculatorFrame
      */
     public CalculatorFrame()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        this.setTitle("계산기");
+        this.setSize(300, 300);
+        
+        //this.add(new NorthPanel());
+        //this.add(new CenterPanel());
+        //this.add(new SouthPanel());
+        
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
